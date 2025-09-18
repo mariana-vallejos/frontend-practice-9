@@ -1,1 +1,5 @@
-
+.hero-bg{
+    background-image: url("src/assets/img/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
