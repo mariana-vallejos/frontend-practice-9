@@ -1,13 +1,14 @@
 export type Book = {
-    id: number,
+    id: string,
     title: string,
+    subtitle: string
     description: string,
-    author: string,
-    coverImage: string,
-    publishedYear: number,
-    genre: string,
-    rating: number,
-    pages: number,
-    language: string,
-    isbn: string
+    authors: string,
+    publisher: string
+    pages: number
+    year: number
+    image: string
+    url: string
 }
+
+export type BriefBook = Omit<Book, "description" | "publisher" | "pages" | "year" | "author">
